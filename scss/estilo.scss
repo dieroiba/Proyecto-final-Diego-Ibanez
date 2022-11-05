@@ -1,0 +1,342 @@
+header{
+    background-color: #ce9c9d;
+    div{
+        a{
+            img{
+                width: 20%;
+            }
+        }
+    }
+}
+
+body{
+    text-align: center;
+}
+
+.envoltura{
+    display: inline-block;
+    width: 80%;
+    height: auto;
+}
+
+nav{
+    ul{
+        display:inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+        font: bold 14px verdana, sans-serif;
+        list-style: none;
+        
+    }
+}
+
+
+/* Inicio de seteo de Etiquetas */
+h1 {
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    font: 20px verdana, sans-serif;
+    color: rgb(110, 110, 110);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 7%;
+}
+
+h3 {
+    font: 20px times, serif;
+    font-style: italic;
+    font-size: 3em;
+    color: rgb(117, 117, 117);
+    margin: 20px;
+}
+/* Fin de seteo de Etiquetas */
+
+.en-linea{
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 10px;
+}
+
+.fadein figure:hover img {
+	opacity: .5;
+}
+
+.sombra-grow-img {
+    transform: translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.sombra-grow-img:hover,
+.sombra-grow-img:focus,
+.sombra-grow-img:active {
+    transform: scale(1.1);
+}
+
+/* Seteo de los botones rosas de la barra de menú*/
+.nav-boton-menu {
+    background-color: #ce9c9c;
+    border: none;
+    border-radius: 10px 10px;
+    box-shadow: rgb(150, 150, 150) 5px 5px 5px;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.nav-boton-menu span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+.nav-boton-menu span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .nav-boton-menu:hover span {
+    padding-right: 25px;
+  }
+  
+  .nav-boton-menu:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+/* Fin seteo de los botones rosas de la barra de menú*/
+
+/* Configuración del footer*/
+#footer-contenedor {
+    display:flex;
+    justify-content:space-evenly;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    width: auto;
+    flex-wrap: wrap;
+    background-color: #ce9c9c;
+  }
+
+  /* Inicio de Boton de Whatsapp animado*/
+
+.whats-boton:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Fin de Boton de Whatsapp animado*/
+
+/* Formato de las listas del footer */
+.footer-listado {
+    font-size: 14px;
+    text-align: left;
+    margin: 25px 5px;
+}
+
+/* Cursiva para subtítulo de imágenes */
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 1.5%;
+    margin-top: 3%;
+}
+
+/* Inicio de seteo de la pagina Index para vista desktop / mobile con maquetación Grid */
+
+.grid-container {
+    display:grid;
+    gap: 2rem; 
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+}
+/* Fin de seteo de la pagina Index para vista desktop / mobile con maquetación Grid */
+
+
+/* Inicio de seteo de la pagina Retratos para vista desktop / mobile con maquetación Grid */
+.grid-container-2 {
+            display:grid;
+            gap: 2rem; 
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+        
+.img-retrato {
+            width: 90%;
+        }
+/* Fin de seteo de la pagina Retratos para vista desktop / mobile con Grid */
+
+
+/* Inicio de esquinas redondeadas y sombras de las img en el Index*/
+.img-index {
+      border-radius: 3%;
+      box-shadow: rgb(150, 150, 150) 5px 5px 5px;
+      opacity: 1;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      width: 230px;
+}
+
+.img-default {
+    border-radius: 3%;
+      box-shadow: rgb(150, 150, 150) 5px 5px 5px;
+      width: 40%;
+      margin: 1%;
+}
+/* Fin de esquinas redondeadas y sombras de las img en el Index */
+
+/* Declaración para poner los tres elementos article del Index en una sola línea */
+.en-linea {
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 10px;
+}
+
+/*Estilo de los párrafos*/
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+/* Seteo de los botones que están debajo de las fotografías*/
+.figure-image-boton {
+    background-color: #5770fa;
+    border: none;
+    border-radius: 25px 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/* Inicio transformacion / transición de botones azules que están en el Index*/
+.sombra-grow {
+    box-shadow: rgb(150, 150, 150) 5px 5px 5px;
+    transform: translateZ(0);
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.sombra-grow:hover,
+.sombra-grow:focus,
+.sombra-grow:active {
+    transform: scale(1.2);
+}
+/* Fin transformacion / transición de botones azules que están en el Index*/
+
+
+/* Inicio transformacion / transición de las imagenes que están en el Index*/
+.sombra-grow-img {
+    transform: translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.sombra-grow-img:hover,
+.sombra-grow-img:focus,
+.sombra-grow-img:active {
+    transform: scale(1.1);
+}
+/* Fin transformacion/ transición de las imagenes que están en el Index*/
+
+header div a img {
+    width: 250px;
+    }
+   
+.img-index {
+        width: 250px;
+}
+
+.grid-container {
+        display:block;
+}
+
+#menu {
+    margin-left: 20px;
+}
+
+.img-1{
+    margin: 30px;
+}
+
+.img-2 {
+    margin: 30px;
+}
+
+.img-3 {
+    margin: 30px;
+}
+
+blockquote {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.img-default {
+    width: 80%;
+    max-width: 320px;  
+    margin-bottom: 10px;     
+}
+
+figcaption {
+    margin-bottom: 20px;
+}
+
+.whatsapp-responsive {
+    width: 90%;
+}
+
+/* Ancho fijo del body para pagina Quince */
+
+.ancho-fijo {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*Iframe de Youtube responsive*/
+.youtube-responsive {
+    overflow:hidden;
+    padding-bottom:400px; /* Adecuar este valor para controlar la altura del video */
+    position:relative;
+    height:0;
+}
+.youtube-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/*Fin del iframe de Youtube responsive*/
