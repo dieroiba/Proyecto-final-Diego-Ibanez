@@ -4,7 +4,9 @@
     padding: 0px;
 }
 
-$colorPrimario: #ce8282;
+
+$colorPrimario: #db9f9f;
+
 
 header {
     background-color: $colorPrimario;
@@ -12,17 +14,29 @@ header {
     justify-items: center;
 }
 
+
 .ancho-fijo {
     max-width:960px;
-    margin: auto;
+    display: block;
     text-align: center;
+    margin: auto;
 }
 
-#menu li {
+
+#menu li{
     display:inline-flex;
-    padding: 5px;
-    font: bold 14px verdana, sans-serif;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    // font: bold 14px verdana, sans-serif;
+   }
+
+h1 {
+    margin: 10px 0 10px 0;
+}
+
+h2 {
+    margin: 10px 0 10px 0;
 }
 
 .nav-boton-menu {
@@ -67,9 +81,10 @@ header {
   }
 
   #envoltura {
-    display: inline-block;
+    display: block;
     width: 80%;
     height: auto;
+    margin: auto;
 }
 
 .en-linea {
@@ -77,6 +92,13 @@ header {
     padding: 5px 5px;
     margin: 10px;
     
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
 /* Efecto Hover u opacidad sobre las imágenes del Index*/
@@ -222,10 +244,6 @@ section {
     margin-bottom: 40px;
 }
 
-#menu {
-    margin-left: 20px;
-}
-
 .img-1{
     margin: 30px;
 }
@@ -258,7 +276,7 @@ blockquote {
   border-radius: 3%;
     box-shadow: rgb(150, 150, 150) 5px 5px 5px;
     width: 40%;
-    margin: 1%;
+    margin: auto;
 }
 /* Fin de esquinas redondeadas y sombras de las img en el Index */
 

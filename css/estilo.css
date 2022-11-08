@@ -6,26 +6,34 @@
 }
 
 header {
-  background-color: #ce8282;
+  background-color: #db9f9f;
   display: block;
   justify-items: center;
 }
 
 .ancho-fijo {
   max-width: 960px;
-  margin: auto;
+  display: block;
   text-align: center;
+  margin: auto;
 }
 
 #menu li {
   display: inline-flex;
-  padding: 5px;
-  font: bold 14px verdana, sans-serif;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 10px 0 10px 0;
+}
+
+h2 {
+  margin: 10px 0 10px 0;
 }
 
 .nav-boton-menu {
-  background-color: #ce8282;
+  background-color: #db9f9f;
   border: none;
   border-radius: 10px 10px;
   box-shadow: rgb(150, 150, 150) 5px 5px 5px;
@@ -66,15 +74,23 @@ header {
 }
 
 #envoltura {
-  display: inline-block;
+  display: block;
   width: 80%;
   height: auto;
+  margin: auto;
 }
 
 .en-linea {
   display: inline-block;
   padding: 5px 5px;
   margin: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
 /* Efecto Hover u opacidad sobre las imágenes del Index*/
@@ -84,7 +100,7 @@ header {
 
 /* Seteo de los botones que están debajo de las fotografías*/
 .figure-image-boton {
-  background-color: #ce8282;
+  background-color: #db9f9f;
   border: none;
   border-radius: 25px 10px;
   color: white;
@@ -133,7 +149,7 @@ header {
   padding: 10px 10px;
   width: auto;
   flex-wrap: wrap;
-  background-color: #ce8282;
+  background-color: #db9f9f;
 }
 
 /*Iframe de Youtube responsive*/
@@ -238,10 +254,6 @@ section {
   margin-bottom: 40px;
 }
 
-#menu {
-  margin-left: 20px;
-}
-
 .img-1 {
   margin: 30px;
 }
@@ -274,7 +286,7 @@ blockquote {
   border-radius: 3%;
   box-shadow: rgb(150, 150, 150) 5px 5px 5px;
   width: 40%;
-  margin: 1%;
+  margin: auto;
 }
 
 /* Fin de esquinas redondeadas y sombras de las img en el Index */
