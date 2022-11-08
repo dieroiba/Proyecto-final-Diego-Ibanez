@@ -14,22 +14,33 @@ header {
     justify-items: center;
 }
 
-
-.ancho-fijo {
-    max-width:960px;
-    display: block;
+.test-centrado {
     text-align: center;
-    margin: auto;
 }
 
-
-#menu li{
-    display:inline-flex;
-    justify-content: center;
-    align-items: center;
+.ancho-fijo {
     
-    // font: bold 14px verdana, sans-serif;
-   }
+    text-align: center;
+}
+
+#menu {
+   margin: 30px 0 30px 0;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding-top: 40px;
+}
+
+nav {
+    display:inline-block;
+ }
+
+ li {
+    justify-content: center;
+    list-style: none;
+ }
 
 h1 {
     margin: 10px 0 10px 0;
@@ -48,7 +59,7 @@ h2 {
     padding: 10px 22px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    // display: inline-block;
     font-size: 18px;
     transition: all 0.5s;
     cursor: pointer;
@@ -57,7 +68,7 @@ h2 {
 
 .nav-boton-menu span {
     cursor: pointer;
-    display: inline-block;
+    // display: inline-block;
     position: relative;
     transition: 0.5s;
   }
@@ -80,12 +91,6 @@ h2 {
     right: 0;
   }
 
-  #envoltura {
-    display: block;
-    width: 80%;
-    height: auto;
-    margin: auto;
-}
 
 .en-linea {
     display: inline-block;
@@ -101,6 +106,14 @@ img {
   width: 20%;
 }
 
+.img-test {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+  }
+
+  
 /* Efecto Hover u opacidad sobre las imágenes del Index*/
 .fadein figure:hover img {
 	opacity: .5;
@@ -178,6 +191,10 @@ img {
 
 /* Inicio de Boton de Whatsapp animado*/
 
+.texto-just {
+    text-align: justify;
+}
+
 .whats-boton:hover{
     animation: shake 0.5s;
     animation-iteration-count: infinite;
@@ -235,13 +252,15 @@ header div a img {
     width: 250px;
     }
    
-
-.grid-container {
-        display:block;
+blockquote {
+    align-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 40%;
 }
 
-section {
-    margin-bottom: 40px;
+.alin-index {
+    background-color: aquamarine;
 }
 
 .img-1{
@@ -256,10 +275,6 @@ section {
     margin: 30px;
 }
 
-blockquote {
-    text-align: justify;
-    margin-bottom: 20px;
-}
 
 /* Inicio de esquinas redondeadas y sombras de las img en el Index*/
 .img-index {
