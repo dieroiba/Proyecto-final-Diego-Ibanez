@@ -16,6 +16,7 @@ header {
 }
 
 .ancho-fijo {
+  margin: 0 15px 0 15px;
   text-align: center;
 }
 
@@ -40,10 +41,13 @@ li {
 
 h1 {
   margin: 10px 0 10px 0;
+  text-align: center;
 }
 
 h2 {
   margin: 10px 0 10px 0;
+  text-align: center;
+  font-size: 23px;
 }
 
 .nav-boton-menu {
@@ -164,6 +168,12 @@ img {
   background-color: #db9f9f;
 }
 
+/* Centrado de tabla en la pantalla de Reserva-Turno*/
+.wrapper-table > table {
+  display: inline-table;
+  width: 40%;
+}
+
 /*Iframe de Youtube responsive*/
 .youtube-responsive {
   overflow: hidden;
@@ -183,7 +193,10 @@ img {
 /*Fin del iframe de Youtube responsive*/
 /* Inicio de Boton de Whatsapp animado*/
 .texto-just {
+  display: block;
   text-align: justify;
+  margin: auto;
+  max-width: 800px;
 }
 
 .whats-boton:hover {
@@ -250,6 +263,7 @@ figcaption {
   font-size: 14px;
   margin-bottom: 1.5%;
   margin-top: 3%;
+  text-align: center;
 }
 
 .whats-boton {
