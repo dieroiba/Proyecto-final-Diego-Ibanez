@@ -1,14 +1,39 @@
 @charset "UTF-8";
+header {
+  background-color: rgb(240, 183, 183);
+  display: block;
+  justify-items: center;
+}
+
+#footer-contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  width: auto;
+  flex-wrap: wrap;
+  background-color: rgb(240, 183, 183);
+}
+
 /* Todos los elementos tendran 0px de margen y espacio interior*/
 * {
   margin: 0px;
   padding: 0px;
 }
 
-header {
-  background-color: #db9f9f;
-  display: block;
-  justify-items: center;
+nav {
+  margin-bottom: 30px;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding-top: 40px;
+}
+
+main section article {
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 10px;
 }
 
 .test-centrado {
@@ -18,25 +43,6 @@ header {
 .ancho-fijo {
   margin: 0 15px 0 15px;
   text-align: center;
-}
-
-#menu {
-  margin: 30px 0 30px 0;
-}
-
-#menu li {
-  display: inline-block;
-  list-style: none;
-  padding-top: 40px;
-}
-
-nav {
-  display: inline-block;
-}
-
-li {
-  justify-content: center;
-  list-style: none;
 }
 
 h1 {
@@ -51,7 +57,7 @@ h2 {
 }
 
 .nav-boton-menu {
-  background-color: #db9f9f;
+  background-color: rgb(240, 183, 183);
   border: none;
   border-radius: 10px 10px;
   box-shadow: rgb(150, 150, 150) 5px 5px 5px;
@@ -89,24 +95,11 @@ h2 {
   right: 0;
 }
 
-.en-linea {
-  display: inline-block;
-  padding: 5px 5px;
-  margin: 10px;
-}
-
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 20%;
-}
-
-.img-test {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 120px;
 }
 
 /* Efecto Hover u opacidad sobre las imágenes del Index*/
@@ -116,7 +109,7 @@ img {
 
 /* Seteo de los botones que están debajo de las fotografías*/
 .figure-image-boton {
-  background-color: #db9f9f;
+  background-color: rgb(240, 183, 183);
   border: none;
   border-radius: 25px 10px;
   color: white;
@@ -158,16 +151,6 @@ img {
 
 /* Fin transformacion/ transición de las imagenes que están en el Index*/
 /* Configuración del footer*/
-#footer-contenedor {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 10px 10px;
-  padding: 10px 10px;
-  width: auto;
-  flex-wrap: wrap;
-  background-color: #db9f9f;
-}
-
 /* Centrado de tabla en la pantalla de Reserva-Turno*/
 .wrapper-table > table {
   display: inline-table;
@@ -285,18 +268,6 @@ blockquote {
 
 .alin-index {
   background-color: aquamarine;
-}
-
-.img-1 {
-  margin: 30px;
-}
-
-.img-2 {
-  margin: 30px;
-}
-
-.img-3 {
-  margin: 30px;
 }
 
 /* Inicio de esquinas redondeadas y sombras de las img en el Index*/

@@ -1,3 +1,10 @@
+@import "./base/variables";
+@import "./componentes/header";
+@import "./componentes/footer";
+
+
+
+
 /* Todos los elementos tendran 0px de margen y espacio interior*/ 
 * {
     margin: 0px;
@@ -5,13 +12,24 @@
 }
 
 
-$colorPrimario: #db9f9f;
 
+nav {
+    margin-bottom: 30px;
+    li {
+        display: inline-block;
+        list-style: none;
+        padding-top: 40px;
+    }
+}
 
-header {
-    background-color: $colorPrimario;
-    display: block;
-    justify-items: center;
+main {
+    section {
+        article {
+            display: inline-block;
+            padding: 5px 5px;
+            margin: 10px;
+        }
+    }
 }
 
 .test-centrado {
@@ -23,24 +41,6 @@ header {
     text-align: center;
 }
 
-#menu {
-   margin: 30px 0 30px 0;
-}
-
-#menu li {
-    display: inline-block;
-    list-style: none;
-    padding-top: 40px;
-}
-
-nav {
-    display:inline-block;
- }
-
- li {
-    justify-content: center;
-    list-style: none;
- }
 
 h1 {
     margin: 10px 0 10px 0;
@@ -54,7 +54,7 @@ h2 {
 }
 
 .nav-boton-menu {
-    background-color: $colorPrimario;
+    background-color: $color;
     border: none;
     border-radius: 10px 10px;
     box-shadow: rgb(150, 150, 150) 5px 5px 5px;
@@ -62,7 +62,6 @@ h2 {
     padding: 10px 22px;
     text-align: center;
     text-decoration: none;
-    // display: inline-block;
     font-size: 18px;
     transition: all 0.5s;
     cursor: pointer;
@@ -71,7 +70,6 @@ h2 {
 
 .nav-boton-menu span {
     cursor: pointer;
-    // display: inline-block;
     position: relative;
     transition: 0.5s;
   }
@@ -95,13 +93,6 @@ h2 {
   }
 
 
-.en-linea {
-    display: inline-block;
-    padding: 5px 5px;
-    margin: 10px;
-    
-}
-
 img {
   display: block;
   margin-left: auto;
@@ -109,12 +100,6 @@ img {
   width: 20%;
 }
 
-.img-test {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 120px;
-  }
 
   
 /* Efecto Hover u opacidad sobre las imágenes del Index*/
@@ -124,7 +109,7 @@ img {
 
 /* Seteo de los botones que están debajo de las fotografías*/
 .figure-image-boton {
-    background-color: $colorPrimario;
+    background-color: $color;
     border: none;
     border-radius: 25px 10px;
     color: white;
@@ -166,15 +151,15 @@ img {
 /* Fin transformacion/ transición de las imagenes que están en el Index*/
 
 /* Configuración del footer*/
-#footer-contenedor {
-    display:flex;
-    justify-content:space-evenly;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    width: auto;
-    flex-wrap: wrap;
-    background-color: $colorPrimario;
-  }
+// #footer-contenedor {
+//     display:flex;
+//     justify-content:space-evenly;
+//     margin: 10px 10px;
+//     padding: 10px 10px;
+//     width: auto;
+//     flex-wrap: wrap;
+//     background-color: $colorPrimario;
+//   }
 
 /* Centrado de tabla en la pantalla de Reserva-Turno*/
 .wrapper-table > table {
@@ -274,18 +259,6 @@ blockquote {
 
 .alin-index {
     background-color: aquamarine;
-}
-
-.img-1{
-    margin: 30px;
-}
-
-.img-2 {
-    margin: 30px;
-}
-
-.img-3 {
-    margin: 30px;
 }
 
 
