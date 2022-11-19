@@ -1,17 +1,15 @@
 @charset "UTF-8";
-/* Inicio configuración del header */
 
+/* Inicio configuración del header */
 header {
   background-color: rgb(240, 183, 183);
   display: block;
   justify-items: center;
 }
-
 /* Fin configuración del header */
 
 
 /* Inicio configuración del pie de pagina */
-
 #footer-contenedor {
   display: flex;
   justify-content: space-evenly;
@@ -21,7 +19,6 @@ header {
   flex-wrap: wrap;
   background-color: rgb(240, 183, 183);
 }
-
 /* Fin configuración del pie de pagina */
 
 
@@ -71,22 +68,23 @@ nav li {
   list-style: none;
   padding-top: 40px;
 }
+/*Fin configuración del menú para que sea responsive*/
 
+/*Configuración de la disposición de las 3 imagenes del index*/
 main section article {
   display: inline-block;
   padding: 5px 5px;
   margin: 10px;
 }
+/*Configuración de la disposición de las 3 imagenes del index*/
 
-.test-centrado {
-  text-align: center;
-}
-
+/*Centrado del contenido del body*/
 .ancho-fijo {
   margin: 0 15px 0 15px;
   text-align: center;
 }
 
+/*Configuración de etiquetas*/
 h1 {
   margin: 10px 0 10px 0;
   text-align: center;
@@ -97,7 +95,9 @@ h2 {
   text-align: center;
   font-size: 23px;
 }
+/*Fin configuración de etiquetas*/
 
+/*Inicio configuración de los botones del menú*/
 .nav-boton-menu {
   background-color: rgb(240, 183, 183);
   border: none;
@@ -136,6 +136,7 @@ h2 {
   opacity: 1;
   right: 0;
 }
+/*Inicio configuración de los botones del menú*/
 
 img {
   display: block;
@@ -176,8 +177,8 @@ img {
 .sombra-grow:active {
   transform: scale(1.2);
 }
-
 /* Fin transformacion / transición de botones que están en el Index*/
+
 /* Inicio transformacion / transición de las imagenes que están en el Index*/
 .sombra-grow-img {
   transform: translateZ(0);
@@ -190,9 +191,9 @@ img {
 .sombra-grow-img:active {
   transform: scale(1.1);
 }
-
 /* Fin transformacion/ transición de las imagenes que están en el Index*/
-/* Configuración del footer*/
+
+
 /* Centrado de tabla en la pantalla de Reserva-Turno*/
 .wrapper-table > table {
   display: inline-table;
@@ -214,8 +215,8 @@ img {
   width: 100%;
   position: absolute;
 }
-
 /*Fin del iframe de Youtube responsive*/
+
 /* Inicio de Boton de Whatsapp animado*/
 .texto-just {
   display: block;
@@ -265,6 +266,7 @@ img {
   }
 }
 /* Fin de Boton de Whatsapp animado*/
+
 /* Formato de las listas del footer */
 .footer-listado {
   font-size: 14px;
@@ -277,7 +279,7 @@ i {
   margin-right: 10px;
 }
 
-/* Comienzo de formato para artículos */
+/* Formato para artículos */
 #articulo-formato {
   text-align: center;
 }
@@ -289,27 +291,26 @@ figcaption {
   margin-bottom: 1.5%;
   margin-top: 3%;
   text-align: center;
+  margin-bottom: 20px;
 }
 
+/*Ancho y margen para el boton de Whatsapp*/
 .whats-boton {
   margin-top: 20px;
   width: 230px;
 }
 
-/*Adaptación del tamaño del logo para dispositivos móviles*/
+/*Tamaño del logo principal para dispositivos móviles*/
 header div a img {
   width: 250px;
 }
 
+/*Configuración del formato de los testimonios*/
 blockquote {
   align-content: center;
   margin: auto;
   margin-bottom: 20px;
   max-width: 40%;
-}
-
-.alin-index {
-  background-color: aquamarine;
 }
 
 /* Inicio de esquinas redondeadas y sombras de las img en el Index*/
@@ -329,15 +330,7 @@ blockquote {
   width: 40%;
   margin: auto;
 }
-
 /* Fin de esquinas redondeadas y sombras de las img en el Index */
-figcaption {
-  margin-bottom: 20px;
-}
-
-.whatsapp-responsive {
-  width: 90%;
-}
 
 /* Inicio de seteo de la pagina Retratos para vista desktop / mobile con maquetación Grid */
 .grid-container-2 {
@@ -345,11 +338,66 @@ figcaption {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
+/* Fin de seteo de la pagina Retratos para vista desktop / mobile con maquetación Grid */
 
+/*Tamaño de las imagenes de la pagina de Retratos*/
 .img-retrato {
   width: 90%;
 }
 
-/* Fin de seteo de la pagina Retratos para vista desktop / mobile con Grid */
+/*Configuración del formulario de contacto*/
+.container-form {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20 px 0;
+}
+
+input, textarea, label {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  color: #828282;
+}
+
+input, textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #828282;
+}
+
+input[type=submit] {
+  background-color: #545557;
+  padding: 15px 0;
+  color: rgb(48, 47, 47);
+  font-size: 18px;
+  border-bottom: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+input[type=submit]:hover {
+  background: #FFF;
+  color: #1b1c1e;
+}
+
+input, textarea {
+  color: rgb(51, 50, 50);
+  font-size: 18px;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #828282;
+}
+
 
 /*# sourceMappingURL=estilo.css.map */
