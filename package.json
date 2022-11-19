@@ -1,11 +1,11 @@
 {
   "name": "back-proyecto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web para práctica con HTML 5, CSS y SASS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Diego Ibanez",
   "license": "ISC"
 }
