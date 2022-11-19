@@ -15,6 +15,32 @@ header {
   background-color: rgb(240, 183, 183);
 }
 
+ul {
+  list-style-type: none;
+}
+
+/* Configuración de links */
+
+/* Links sin visitar */
+a:link {
+  color: rgb(3, 3, 3);
+}
+
+/* Links visitados */
+a:visited {
+  color: rgb(250, 252, 250);
+}
+
+/* Link mouse over */
+a:hover {
+  color: rgb(128, 115, 241);
+}
+
+/* Link seleccionado */
+a:active {
+  color: blue;
+}
+
 /* Todos los elementos tendran 0px de margen y espacio interior*/
 * {
   margin: 0px;
