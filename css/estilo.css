@@ -1,9 +1,16 @@
 @charset "UTF-8";
+/* Inicio configuración del header */
+
 header {
   background-color: rgb(240, 183, 183);
   display: block;
   justify-items: center;
 }
+
+/* Fin configuración del header */
+
+
+/* Inicio configuración del pie de pagina */
 
 #footer-contenedor {
   display: flex;
@@ -15,11 +22,15 @@ header {
   background-color: rgb(240, 183, 183);
 }
 
+/* Fin configuración del pie de pagina */
+
+
+/* Listados sin puntos negros */
 ul {
   list-style-type: none;
 }
 
-/* Configuración de links */
+/* Configuración de los enlaces */
 
 /* Links sin visitar */
 a:link {
@@ -40,6 +51,8 @@ a:hover {
 a:active {
   color: blue;
 }
+/* Fin configuración de los enlaces */
+
 
 /* Todos los elementos tendran 0px de margen y espacio interior*/
 * {
@@ -47,11 +60,14 @@ a:active {
   padding: 0px;
 }
 
+/* Separación de la barra de menú del contenido inferior*/
 nav {
   margin-bottom: 30px;
 }
+
+/*Configuración del menú para que sea responsive*/
 nav li {
-  display: inline-block;
+  display: inline-flex;
   list-style: none;
   padding-top: 40px;
 }
