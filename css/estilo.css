@@ -207,6 +207,7 @@ img {
 .wrapper-table > table {
   display: inline-table;
   width: 40%;
+  margin: 30px auto 30px auto;
 }
 
 /*Iframe de Youtube responsive*/
@@ -340,7 +341,8 @@ blockquote {
   border-radius: 3%;
   box-shadow: rgb(150, 150, 150) 5px 5px 5px;
   width: 70%;
-  margin: auto;
+  margin: 20px 0 20px 0;
+  margin: 20px auto 20px auto;
 }
 /*Fin de seteo de imágenes en artículos*/
 
