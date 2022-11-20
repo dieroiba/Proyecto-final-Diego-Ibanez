@@ -332,14 +332,19 @@ blockquote {
   width: 220px;
   margin-top: 20px;
 }
+/* Fin de esquinas redondeadas y sombras de las img en el Index*/
 
+
+/*Inicio de seteo de imágenes en artículos*/
 .img-default {
   border-radius: 3%;
   box-shadow: rgb(150, 150, 150) 5px 5px 5px;
-  width: 40%;
+  width: 70%;
   margin: auto;
 }
-/* Fin de esquinas redondeadas y sombras de las img en el Index */
+/*Fin de seteo de imágenes en artículos*/
+
+
 
 /* Inicio de seteo de la pagina Retratos para vista desktop / mobile con maquetación Grid */
 .grid-container-2 {
@@ -411,6 +416,7 @@ textarea:focus {
 .contact-form {
    width: 80%;
    margin-top: 25px;
+   margin-bottom: 25px;
 }
 
 
