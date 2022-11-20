@@ -365,7 +365,7 @@ blockquote {
 .grid-container-2 {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 }
 /* Fin de seteo de la pagina Retratos para vista desktop / mobile con maquetación Grid */
 
@@ -376,8 +376,8 @@ blockquote {
 
 
 /*Configuración del formulario de contacto*/
-form {
-  max-width: 500px;
+.contact-form {
+  max-width: 450px;
   margin: 0 auto;
   text-align: left;
   padding: 20 px 0;
@@ -386,12 +386,17 @@ form {
 input, textarea, label {
   display: block;
   margin: 0 auto;
-  width: 100%;
+  width:80%;
   color: #828282;
 }
 
+textarea {
+  width: 300px;
+  height: 150px;
+}
+
+
 input, textarea {
-  background-color: transparent;
   border: 0;
   border-bottom: 2px solid #828282;
 }
