@@ -27,7 +27,8 @@ ul {
   list-style-type: none;
 }
 
-/* Configuración de los enlaces */
+
+/* Inicio Configuración de los enlaces */
 
 /* Links sin visitar */
 a:link {
@@ -57,10 +58,12 @@ a:active {
   padding: 0px;
 }
 
+
 /* Separación de la barra de menú del contenido inferior*/
 nav {
   margin-bottom: 30px;
 }
+
 
 /*Configuración del menú para que sea responsive*/
 nav li {
@@ -70,19 +73,22 @@ nav li {
 }
 /*Fin configuración del menú para que sea responsive*/
 
+
 /*Configuración de la disposición de las 3 imagenes del index*/
 main section article {
   display: inline-block;
   padding: 5px 5px;
   margin: 10px;
 }
-/*Configuración de la disposición de las 3 imagenes del index*/
+/*Fin de la disposición de las 3 imagenes del index*/
+
 
 /*Centrado del contenido del body*/
 .ancho-fijo {
   margin: 0 15px 0 15px;
   text-align: center;
 }
+
 
 /*Configuración de etiquetas*/
 h1 {
@@ -103,8 +109,8 @@ h3 {
 .esp-autor {
   margin-bottom: 30px;
 }
-
 /*Fin configuración de etiquetas*/
+
 
 /*Inicio configuración de los botones del menú*/
 .nav-boton-menu {
@@ -145,8 +151,10 @@ h3 {
   opacity: 1;
   right: 0;
 }
-/*Inicio configuración de los botones del menú*/
+/*Fin configuración de los botones del menú*/
 
+
+/*Configuración de las imágenes*/
 img {
   display: block;
   margin-left: auto;
@@ -154,12 +162,14 @@ img {
   width: 20%;
 }
 
+
 /* Efecto Hover u opacidad sobre las imágenes del Index*/
 .fadein figure:hover img {
   opacity: 0.5;
 }
 
-/* Seteo de los botones que están debajo de las fotografías*/
+
+/* Seteo de los botones que están debajo de las fotografías en el Index*/
 .figure-image-boton {
   background-color: rgb(240, 183, 183);
   border: none;
@@ -172,6 +182,7 @@ img {
   font-size: 18px;
   margin-top: 30px;
 }
+
 
 /* Inicio transformacion / transición de botones que están en el Index*/
 .sombra-grow {
@@ -187,6 +198,7 @@ img {
   transform: scale(1.2);
 }
 /* Fin transformacion / transición de botones que están en el Index*/
+
 
 /* Inicio transformacion / transición de las imagenes que están en el Index*/
 .sombra-grow-img {
@@ -277,6 +289,7 @@ img {
 }
 /* Fin de Boton de Whatsapp animado*/
 
+
 /* Formato de las listas del footer */
 .footer-listado {
   font-size: 14px;
@@ -361,8 +374,8 @@ blockquote {
   width: 90%;
 }
 
-/*Configuración del formulario de contacto*/
 
+/*Configuración del formulario de contacto*/
 form {
   max-width: 500px;
   margin: 0 auto;
@@ -383,38 +396,13 @@ input, textarea {
   border-bottom: 2px solid #828282;
 }
 
-/* input[type=submit] {
-  background-color: #0c3c9c;
-  padding: 15px 0;
-  color: rgb(48, 47, 47);
-  font-size: 18px;
-  border-bottom: none;
-  margin-top: 30px;
-  cursor: pointer;
-  transition: all .3s ease;
-} */
-
-/* input[type=submit]:hover {
-  background: #FFF;
-  color: #1b1c1e;
-} */
-
 input, textarea {
   color: rgb(51, 50, 50);
   font-size: 18px;
   padding: 10px;
 }
+/* Fin configuración del formulario de contacto*/
 
-/* input:focus,
-textarea:focus {
-  outline: 1px solid #828282;
-} */
-
-/* .contact-form {
-   width: 80%;
-   margin-top: 25px;
-   margin-bottom: 25px;
-} */
 
 
 /*# sourceMappingURL=estilo.css.map */
