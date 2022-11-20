@@ -34,20 +34,14 @@
 
         <main>
 
-            <div class="container-form">
-                <h1>Contactame</h1>
-                <p>Enviame un mensaje ahora mismo y te responderé a la mayor brevedad posible</p>
-                <form action="mail.php" method="POST">
-                    <label for="name"></label>
-                    <input type="text" name="name" id="name"> 
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                    <label for="subject">Subject:</label>
-                    <input type="text" name="subject" id="subject">
-                    <label for="message">Mensaje</label>
-                    <textarea name="message" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Send">
-                </form>
+            <p>Enviar mensaje</p>
+            <form class="contact-form" action="contactform.php" method="post">
+                <input type="text" name="name" placeholder="Nombre completo">
+                <input type="text" name="mail" placeholder="Tu email">
+                <input type="text" name="subject" placeholder="Asunto">
+                <textarea name="message" placeholder="Mensaje"></textarea>
+                <button type="submit" name="submit">Send mail</button>
+            </form>
             </div>
             
         </main>
